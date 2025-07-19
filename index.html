@@ -22,21 +22,40 @@
         .container {
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 2rem;
         }
         
+        .header-section {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
         .content {
             width: 33.333%;
             text-align: center;
+            margin-top: 10rem;
+        }
+        
+        .logo {
+            width: 160px;
+            height: auto;
+            margin-bottom: 0.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .company-name {
             font-family: serif;
             font-size: 3rem;
             font-weight: bold;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
         }
         
         .subtitle {
@@ -47,7 +66,7 @@
         .description {
             font-size: 1rem;
             line-height: 1.6;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
         
         .navigation {
@@ -73,11 +92,13 @@
             transform: translateX(-50%);
             font-size: 0.75rem;
             color: #6b7280;
+            text-align: center;
         }
         
         @media (max-width: 768px) {
             .content {
                 width: 90%;
+                margin-top: 12rem;
             }
             
             .company-name {
@@ -86,6 +107,11 @@
             
             .subtitle {
                 font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .description {
+                margin-bottom: 3rem;
             }
             
             .navigation {
@@ -95,9 +121,13 @@
     </style>
 </head>
 <body>
+    <div class="header-section">
+        <img src="logo2.png" alt="Iskarin Group Logo" class="logo">
+        <h1 class="company-name">ISKARIN GROUP</h1>
+    </div>
+    
     <div class="container">
         <div class="content">
-            <h1 class="company-name">ISKARIN GROUP</h1>
             <h2 class="subtitle">AI solutions tailored to your needs</h2>
             <p class="description">
                 We develop custom AI software for businesses across all industries with no upfront costs. 

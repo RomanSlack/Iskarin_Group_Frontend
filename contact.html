@@ -22,21 +22,40 @@
         .container {
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 2rem;
         }
         
+        .header-section {
+            position: fixed;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
         .content {
             width: 33.333%;
             text-align: center;
+            margin-top: 10rem;
+        }
+        
+        .logo {
+            width: 160px;
+            height: auto;
+            margin-bottom: 0.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .company-name {
             font-family: serif;
             font-size: 3rem;
             font-weight: bold;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
         }
         
         .subtitle {
@@ -47,11 +66,11 @@
         .description {
             font-size: 1rem;
             line-height: 1.6;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
         
         .form {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
         
         .form input,
@@ -109,11 +128,13 @@
             transform: translateX(-50%);
             font-size: 0.75rem;
             color: #6b7280;
+            text-align: center;
         }
         
         @media (max-width: 768px) {
             .content {
                 width: 90%;
+                margin-top: 16rem;
             }
             
             .company-name {
@@ -122,6 +143,15 @@
             
             .subtitle {
                 font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .description {
+                margin-bottom: 3rem;
+            }
+            
+            .form {
+                margin-bottom: 3rem;
             }
             
             .navigation {
@@ -131,17 +161,21 @@
     </style>
 </head>
 <body>
+    <div class="header-section">
+        <img src="logo2.png" alt="Iskarin Group Logo" class="logo">
+        <h1 class="company-name">ISKARIN GROUP</h1>
+    </div>
+    
     <div class="container">
         <div class="content">
-            <h1 class="company-name">ISKARIN GROUP</h1>
             <h2 class="subtitle">Let's Get In Touch</h2>
             <p class="description">
-                Email us at contact@iskarin.group and we'll respond within 24 hours to explore your AI project needs.
+                Email us at <a href="mailto:contact@iskarin.group" style="color: #2563eb; text-decoration: none;">contact@iskarin.group</a> and we'll respond within 24 hours to explore your AI project needs.
             </p>
             
-            <form class="form">
-                <input type="email" placeholder="Your email address" required>
-                <textarea placeholder="Tell us about your project" rows="3" required></textarea>
+            <form class="form" action="https://formspree.io/f/xanbqyar" method="POST">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <textarea name="message" placeholder="Tell us about your project" rows="3" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
             
