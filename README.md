@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iskarin Group Website
 
-## Getting Started
+**Live Site:** [https://iskaringroup.netlify.app/](https://iskaringroup.netlify.app/)
 
-First, run the development server:
+A clean, professional website for Iskarin Group - AI solutions tailored to your needs.
+
+## About
+
+Iskarin Group develops custom AI software for businesses across all industries with no upfront costs. Our solutions are built quickly to address your unique requirements using the latest agentic coding capabilities.
+
+## Project Structure
+
+This is a static HTML website with three main pages:
+
+- `index.html` - Homepage with company overview
+- `about.html` - About page detailing who we are
+- `contact.html` - Contact page with email and contact form
+
+## Features
+
+- Responsive design that works on desktop and mobile
+- Clean, minimalist styling
+- Contact form integration with Formspree
+- Professional favicon set
+- Fast loading static HTML pages
+
+## Development
+
+Since this is a static HTML website, you can simply open the HTML files in a web browser to view them locally. For a local development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Using Python (if installed)
+python -m http.server 8000
+
+# Using Node.js (if installed)
+npx serve .
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:8000](http://localhost:8000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The site is deployed on Netlify and automatically updates when changes are pushed to the repository.
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For inquiries about AI solutions, contact us at [contact@iskarin.group](mailto:contact@iskarin.group).
